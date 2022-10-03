@@ -1,0 +1,157 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body {
+		border: 0;
+		margin: 0;
+}
+
+.puzzle{
+	display: grid;
+	padding: 0;
+	margin: 0;
+}
+
+.puzzle-piece-wrapper{
+	list-style: none;
+	overflow: hidden;
+	position: relative;
+
+}
+.puzzle-piece{
+	position: absolute
+}
+
+/* 
+.one{
+	top: 0%;
+	left: 0%;
+}
+
+.two{
+	top: 0%;
+	left: -100%;
+}
+
+.three{
+	top: -100%;
+	left: 0%;
+}
+
+.four{
+	top: -100%;
+	left: -100%;
+} */
+/* 
+
+.one{
+	top: 0%;
+	left: 0%;
+}
+
+.two{
+	top: 0%;
+	left: -100%;
+}
+
+.three{
+	top: 0%;
+	left: -200%;
+}
+
+.four{
+	top: -100%;
+	left: -0%;
+}
+
+.five{
+	top: -100%;
+	left: -100%;
+}
+
+.six{
+	top: -100%;
+	left: -200%;
+}
+
+.seven{
+	top: -200%;
+	left: 0%;
+}
+
+.eight{
+	top: -200%;
+	left: -100%;
+}
+
+.nine{
+	top: -200%;
+	left: -200%;
+}
+ */
+/* 
+.a1{
+	top: 0;
+	left: 0;
+}
+
+.a2{
+	top: 0;
+	left: -100%;
+
+}
+
+.a3{
+	top: -100%;
+	left: 0
+}
+
+{
+	top: -100%;
+	left: -100%;
+} */
+
+/* .one{
+	object-position: 0% 0%;
+}
+
+.two{
+	object-position: 0% calc(100% /3);
+
+}
+
+.three{
+	object-position: 0% calc(200% /3)
+}
+
+.four{
+	object-position: calc(100% /3) 0%;
+} */
+
+/* .five{
+	object-position: calc(100% /3) calc(100% /3);
+
+}
+
+.six{
+	object-position: calc(100% /3) calc(200% /3)
+}
+
+.seven{
+	object-position: calc(200% /3) 0%;
+}
+
+.eight{
+	object-position: calc(200% /3) calc(100% /3);
+
+}
+
+.nine{
+	object-position: calc(200% /3) calc(200% /3)
+}
+ */
+
+/* .{
+	object-position: calc(100% /3) calc(100% /3);
+} */
