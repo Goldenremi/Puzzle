@@ -37,8 +37,6 @@ randomPositions = randomPositions
   .map((e, i) => (i % level === 0 ? randomPositions.slice(i, i + level) : null))
   .filter((t) => t);
 
-
-  randomPositions=orderedPositions
 const puzzle = document.querySelector(".puzzle");
 const [vh, vw] = [window.innerHeight / 100, window.innerWidth / 100];
 for (i = 1; i < level + 1; i++) {
