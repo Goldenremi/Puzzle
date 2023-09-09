@@ -1,157 +1,132 @@
 *{
 	box-sizing: border-box;
-}
-
-html, body {
-		border: 0;
-		margin: 0;
-}
-
-.puzzle{
-	display: grid;
 	padding: 0;
 	margin: 0;
 }
 
+.header {
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	background-color: darkblue;
+	color: white;
+	font-size: large;
+	font-weight: bolder;
+	margin-bottom: 2rem;
+	padding :0.25rem;
+	font-size: 2rem;
+}
+
+.modal{
+	position:fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	background-color:rgba(0,0,0);
+}
+
+.modal div{
+	border: 1px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: black;
+	padding: 2rem;
+	border-radius: 1rem;
+	color: white;
+	font-size: 3rem;
+}
+
+
+
+.modal button {
+	margin-top: 3rem;
+	background-color: white;
+	font-size: 2rem;
+	color: black;
+	padding: 0 .5rem;
+	border: none;
+	border-radius: 1rem;
+}
+
+.puzzle_wrapper{
+	margin-top: 10vh;
+	display: flex;
+	justify-content: center;
+}
+
+.puzzle{
+	display: grid;
+	height: 80vw;
+	width:80vw;
+	overflow: hidden;
+	border: 2px solid black;
+}
+
 .puzzle-piece-wrapper{
+	border: 2px solid black;
+	border-collapse: collapse;
 	list-style: none;
 	overflow: hidden;
 	position: relative;
-
 }
+
+.puzzle-piece-wrapper:hover{
+	border:2px solid greenyellow !important;
+}
+
 .puzzle-piece{
+	overflow: hidden;
 	position: absolute
 }
 
-/* 
-.one{
-	top: 0%;
-	left: 0%;
+.victory{
+	width:fit-content;
+	margin: 1rem auto;
+	padding:1rem 3rem;
+	border: 2px solid green;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* display:none; */
 }
 
-.two{
-	top: 0%;
-	left: -100%;
+.victory p{
+	width: fit-content;
+	text-align: center;
 }
 
-.three{
-	top: -100%;
-	left: 0%;
+.victory button{
+	font-size: 2rem;
+	background-color: #09e009;
+	padding:0 2rem;
+	color: white;
+	margin-top :.5rem;
+	border: 1px solid black;
+	border-radius: .5rem;
 }
 
-.four{
-	top: -100%;
-	left: -100%;
-} */
-/* 
+.footer{
+	position: fixed;
+	bottom: 0;
+	background-color: black;
+	color: white;
+	width: 100%;
+	text-align: center;
 
-.one{
-	top: 0%;
-	left: 0%;
-}
-
-.two{
-	top: 0%;
-	left: -100%;
-}
-
-.three{
-	top: 0%;
-	left: -200%;
-}
-
-.four{
-	top: -100%;
-	left: -0%;
-}
-
-.five{
-	top: -100%;
-	left: -100%;
-}
-
-.six{
-	top: -100%;
-	left: -200%;
-}
-
-.seven{
-	top: -200%;
-	left: 0%;
-}
-
-.eight{
-	top: -200%;
-	left: -100%;
-}
-
-.nine{
-	top: -200%;
-	left: -200%;
-}
- */
-/* 
-.a1{
-	top: 0;
-	left: 0;
-}
-
-.a2{
-	top: 0;
-	left: -100%;
 
 }
 
-.a3{
-	top: -100%;
-	left: 0
+a{
+	color: grey;
 }
 
-{
-	top: -100%;
-	left: -100%;
-} */
-
-/* .one{
-	object-position: 0% 0%;
-}
-
-.two{
-	object-position: 0% calc(100% /3);
-
-}
-
-.three{
-	object-position: 0% calc(200% /3)
-}
-
-.four{
-	object-position: calc(100% /3) 0%;
-} */
-
-/* .five{
-	object-position: calc(100% /3) calc(100% /3);
-
-}
-
-.six{
-	object-position: calc(100% /3) calc(200% /3)
-}
-
-.seven{
-	object-position: calc(200% /3) 0%;
-}
-
-.eight{
-	object-position: calc(200% /3) calc(100% /3);
-
-}
-
-.nine{
-	object-position: calc(200% /3) calc(200% /3)
-}
- */
-
-/* .{
-	object-position: calc(100% /3) calc(100% /3);
-} */
